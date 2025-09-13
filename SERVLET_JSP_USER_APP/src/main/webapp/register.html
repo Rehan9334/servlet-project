@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* Form container */
+    form {
+        background-color: #ffffff;
+        padding: 25px 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    /* Responsive design */
+    @media (max-width: 500px) {
+        form {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<form action="reg" method="post">
+UserName:<input type="text" name="uname"><br>
+Password:<input type="password" name="pword"><br>
+FirstName:<input type="text" name="fname"><br>
+LastName:<input type="text" name="lname"><br>
+City:<input type="text" name="city"><br>
+MailId:<input type="text" name="mid"><br>
+PhoneNo:<input type="text" name="phno"><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
